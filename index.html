@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brendan Neubert - Portfolio</title>
+    <title>Your Name - Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -42,6 +42,29 @@
         .container {
             padding: 20px;
         }
+
+        .projects {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .project {
+            flex: 1;
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 0 10px;
+            text-align: center;
+        }
+
+        .project a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .project:hover {
+            background-color: #f5f5f5;
+        }
     </style>
 </head>
 <body>
@@ -55,7 +78,20 @@
 </header>
 
 <div class="container">
-    <!-- Content goes here -->
+    <div id="projects" class="projects">
+        <div class="project">
+            <a href="project1.html">
+                <h2>Project 1</h2>
+                <p>Description of Project 1</p>
+            </a>
+        </div>
+        <div class="project">
+            <a href="project2.html">
+                <h2>Project 2</h2>
+                <p>Description of Project 2</p>
+            </a>
+        </div>
+    </div>
 </div>
 
 </body>
